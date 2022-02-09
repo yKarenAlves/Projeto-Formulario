@@ -1,160 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 @media screen and (max-width: 1000px) {
-    .background {
-        background-image: 
-        url('../img/vector-cima.svg'), 
-        url('../img/vector-baixo.svg');
-        background-repeat: no-repeat;
-        background-size: 1000px, contain;
-        background-position: center top, bottom;
-    }
-
-    .form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #FFFFFF;
-        width: 90%;
-        margin: 25px auto;
-        border-radius: 20px;   
-    }
-}
-
-@media screen and (min-width: 2000px) {
-    .background {
-        background-image: none;
-    }
-}
-
-body {
-    background-color: rgba(53, 92, 125, 10%);
-    font-family: 'Roboto', sans-serif;
-    color: rgba(53, 92, 125, 1);
-    background-image: 
-        url('../img/vector-cima.svg'), 
-        url('../img/vector-baixo.svg'),
-        url('../img/vector-esquerda.svg'),
-        url('../img/vector-direita.svg');
+  .background {
+    background-image: url("../img/vector-cima.svg"), url("../img/vector-baixo.svg");
     background-repeat: no-repeat;
-    background-size: 1000px, contain, 300px, 200px;
-    background-position: center top, bottom, left center, right center;
-    
-}
+    background-size: 1000px, contain;
+    background-position: center top, bottom; }
 
-form {
+  .form {
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #FFFFFF;
-    width: 900px;
+    width: 90%;
     margin: 25px auto;
-    border-radius: 20px;
-    
-}
+    border-radius: 20px; } }
+@media screen and (min-width: 2000px) {
+  .background {
+    background-image: none; } }
+body {
+  background-color: rgba(53, 92, 125, 0.1);
+  font-family: 'Roboto', sans-serif;
+  color: #355c7d;
+  background-image: url("../img/vector-cima.svg"), url("../img/vector-baixo.svg"), url("../img/vector-esquerda.svg"), url("../img/vector-direita.svg");
+  background-repeat: no-repeat;
+  background-size: 1000px, contain, 300px, 200px;
+  background-position: center top, bottom, left center, right center; }
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFFFFF;
+  width: 900px;
+  margin: 25px auto;
+  border-radius: 20px; }
 
 .formulario {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.formulario__titulo {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .formulario__titulo {
     text-align: center;
-    color: rgba(53, 92, 125, 1);
     margin-top: 50px;
     font-size: 2rem;
-    font-weight: 700;
-}
-
-.formulario__dados {
+    font-weight: 700; }
+  .formulario__dados {
     margin-top: 50px;
     width: 90%;
     padding-bottom: 25px;
-    border-bottom: 1px solid rgba(53, 92, 125, 0.1);
-}
-
-.formulario__input {
-    border-radius: 20px;
-    border-color: rgba(248, 177, 149, 0.1);
-    background: rgba(248, 177, 149, 0.1);
-}
+    border-bottom: 1px solid rgba(53, 92, 125, 0.1); }
+    .formulario__dados .dados__input {
+      border-radius: 20px;
+      border-color: rgba(248, 177, 149, 0.1);
+      background: rgba(248, 177, 149, 0.1); }
 
 .feedback {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-}
-
-.feedback__avaliacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%; }
+  .feedback__titulo {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 1.20rem;
+    text-align: center; }
+  .feedback__avaliacao {
     display: flex;
     flex-direction: column;
     width: 90%;
     height: 225px;
     background-color: rgba(248, 177, 149, 0.1);
-    border-radius: 20px;
-}
-
-.feedback__titulo {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    font-size: 1.20rem;
-    text-align: center;
-}
-
-
-.avaliacao__titulo {
-    margin-top: 10px;
-    margin-left: 10px;
-    font-size: 1rem;
-}
-
-.avaliacao__radios {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-}
-
-.avaliacao__radio {
-    margin-left: 10px;
-}
-
-.feedback__comprarNovamente {
+    border-radius: 20px; }
+    .feedback__avaliacao .avaliacao__titulo {
+      margin-top: 10px;
+      margin-left: 10px;
+      font-size: 1rem; }
+    .feedback__avaliacao .avaliacao__radios {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100%; }
+      .feedback__avaliacao .avaliacao__radios .radio__avaliacao {
+        margin-left: 10px; }
+  .feedback__comprarNovamente {
     width: 90%;
-    margin-top: 20px;
-}
-
-.comprarNovamente__titulo {
-    font-size: 1rem;
-}
-
-.feedback__sugestao {
+    margin-top: 20px; }
+    .feedback__comprarNovamente .comprar-novamente__titulo {
+      font-size: 1rem; }
+  .feedback__sugestao {
     width: 90%;
-    margin-top: 20px;
-}
-
-.sugestao__titulo {
-    font-size: 1rem;
-}
-
-.sugestao__textarea {
-    width: 100%;
-    background-color: rgba(248, 177, 149, 0.1);
-    border-radius: 20px;
-    border-color: rgba(248, 177, 149, 0.1);
-    padding: none;
-}
+    margin-top: 20px; }
+    .feedback__sugestao .sugestao__titulo {
+      font-size: 1rem; }
+    .feedback__sugestao .sugestao__textarea {
+      width: 100%;
+      background-color: rgba(248, 177, 149, 0.1);
+      border-radius: 20px;
+      border-color: rgba(248, 177, 149, 0.1);
+      padding: none; }
 
 .botao {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    width: 50%;
-    height: 50px;
-    border-radius: 20px;
-    background-color: #F8B195;
-    color: #FFFFFF;
-    font-weight: 700;
-}
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 50%;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #F8B195;
+  color: #FFFFFF;
+  font-weight: 700;
+  transition: all 1s ease-out; }
+
+.botao:hover {
+  background-color: #fa703a; }
+
+/*# sourceMappingURL=style.css.map */

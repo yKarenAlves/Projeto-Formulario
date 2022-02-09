@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+//Variáveis 
+
+$branco: #FFFFFF;
+$cor-background: rgba(53, 92, 125, 10%);
+$cor-fonte: rgba(53, 92, 125, 1);
+$cor-input: rgba(248, 177, 149, 0.1);
+$cor-linha: rgba(53, 92, 125, 0.1);
+$cor-botao: #F8B195;
+$cor-botao-hover: #fa703a;
+
+@media screen and (max-width: 1000px) {
+    .background {
+        background-image: 
+        url('../img/vector-cima.svg'), 
+        url('../img/vector-baixo.svg');
+        background-repeat: no-repeat;
+        background-size: 1000px, contain;
+        background-position: center top, bottom;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $branco;
+        width: 90%;
+        margin: 25px auto;
+        border-radius: 20px;   
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .background {
+        background-image: none;
+    }
+}
+
+body {
+    background-color: $cor-background;
+    font-family: 'Roboto', sans-serif;
+    color: $cor-fonte;
+    background-image: 
+        url('../img/vector-cima.svg'), 
+        url('../img/vector-baixo.svg'),
+        url('../img/vector-esquerda.svg'),
+        url('../img/vector-direita.svg');
+    background-repeat: no-repeat;
+    background-size: 1000px, contain, 300px, 200px;
+    background-position: center top, bottom, left center, right center;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $branco;
+    width: 900px;
+    margin: 25px auto;
+    border-radius: 20px;
+    
+}
+
+.formulario {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__titulo {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    &__dados {
+        margin-top: 50px;
+        width: 90%;
+        padding-bottom: 25px;
+        border-bottom: 1px solid $cor-linha;
+
+        .dados {
+            &__input {
+                border-radius: 20px;
+                border-color: $cor-input;
+                background: $cor-input;
+            }
+        }
+    }     
+}
+        
+.feedback {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+
+    &__titulo {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-size: 1.20rem;
+        text-align: center;
+    }
+
+    &__avaliacao {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 225px;
+        background-color: $cor-input;
+        border-radius: 20px;
+
+        .avaliacao {
+
+            &__titulo {
+                margin-top: 10px;
+                margin-left: 10px;
+                font-size: 1rem;
+            }
+            
+            &__radios {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 100%;
+        
+                .radio {
+        
+                    &__avaliacao {
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__comprarNovamente {
+        width: 90%;
+        margin-top: 20px;
+
+        .comprar-novamente {
+
+            &__titulo {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    &__sugestao {
+        width: 90%;
+        margin-top: 20px;
+
+        .sugestao {
+
+            &__titulo {
+                font-size: 1rem;
+            }
+            
+            &__textarea {
+                width: 100%;
+                background-color: $cor-input;
+                border-radius: 20px;
+                border-color: $cor-input;
+                padding: none;
+            }
+        }
+    }
+}
+
+.botao {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 50%;
+    height: 50px;
+    border-radius: 20px;
+    background-color: $cor-botao;
+    color: $branco;
+    font-weight: 700;
+    transition: all 1s ease-out;
+}
+
+.botao:hover {
+    background-color: $cor-botao-hover;
+}

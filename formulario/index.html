@@ -19,73 +19,79 @@
     <main>
 
         <form class="form">
-            <section class="formulario">
-                <h1 class="formulario__titulo">Formulário de feedback</h1>
+            <section class="form__formulario formulario">
+                <h1 class="formulario__titulo">Formulário de Feedback</h1>
                 <div class="form-row formulario__dados">
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6 dados">
                         <label for="formNome">Nome: *</label>
-                        <input type="text" class="form-control formulario__input" id="formNome" placeholder="João" required>
+                        <input type="text" class="form-control dados__input" id="formNome" placeholder="João" required>
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6 dados">
                         <label for="formSobrenome">Sobrenome: *</label>
-                        <input type="text" class="form-control formulario__input" id="formSobrenome" placeholder="Santos" required>
+                        <input type="text" class="form-control dados__input" id="formSobrenome" placeholder="Santos"
+                            required>
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6 dados">
                         <label for="formTelefone">Telefone: *</label>
-                        <input type="text" class="form-control formulario__input" id="formTelefone" placeholder="(11) 1234 - 5678" required >
+                        <input type="text" class="form-control dados__input" id="formTelefone"
+                            placeholder="(11) 1234 - 5678" required>
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group col-md-6 dados">
                         <label for="formEmail">E-mail: *</label>
-                        <input type="email" class="form-control formulario__input" id="formEmail" placeholder="email@email.com" required>
+                        <input type="email" class="form-control dados__input" id="formEmail"
+                            placeholder="email@email.com" required>
                     </div>
                 </div>
             </section>
-            <section class="feedback">
+            <section class="form__feedback feedback">
                 <h2 class="feedback__titulo">Nos conte o que você achou do nosso produto.</h2>
                 <div class="feedback__avaliacao avaliacao">
                     <h3 class="avaliacao__titulo">O que você achou do produto? *</h3>
-                    <div class="avaliacao__radios radios">
-                        <div class="custom-control custom-radio avaliacao__radio">
-                            <input type="radio" id="radExcelente" name="customRadio" class="custom-control-input" required>
+                    <div class="avaliacao__radios radio">
+                        <div class="custom-control custom-radio radio__avaliacao">
+                            <input type="radio" id="radExcelente" name="customRadio" class="custom-control-input"
+                                required>
                             <label class="custom-control-label" for="radExcelente">Excelente</label>
                         </div>
-                        <div class="custom-control custom-radio avaliacao__radio">
+                        <div class="custom-control custom-radio radio__avaliacao">
                             <input type="radio" id="radMuitoBom" name="customRadio" class="custom-control-input">
                             <label class="custom-control-label" for="radMuitoBom">Muito bom</label>
                         </div>
-                        <div class="custom-control custom-radio avaliacao__radio">
+                        <div class="custom-control custom-radio radio__avaliacao">
                             <input type="radio" id="radBom" name="customRadio" class="custom-control-input">
                             <label class="custom-control-label" for="radBom">Bom</label>
                         </div>
-                        <div class="custom-control custom-radio avaliacao__radio">
+                        <div class="custom-control custom-radio radio__avaliacao">
                             <input type="radio" id="radRazoavel" name="customRadio" class="custom-control-input">
                             <label class="custom-control-label" for="radRazoavel">Razoável</label>
                         </div>
-                        <div class="custom-control custom-radio avaliacao__radio">
+                        <div class="custom-control custom-radio radio__avaliacao">
                             <input type="radio" id="radNaoGostei" name="customRadio" class="custom-control-input">
                             <label class="custom-control-label" for="radNaoGostei">Não gostei</label>
                         </div>
-                        <div class="custom-control custom-radio avaliacao__radio">
+                        <div class="custom-control custom-radio radio__avaliacao">
                             <input type="radio" id="radHorrivel" name="customRadio" class="custom-control-input">
                             <label class="custom-control-label" for="radHorrivel">Horrível</label>
                         </div>
                     </div>
                 </div>
-                <div class="feedback__comprarNovamente comprarNovamente">
-                    <h3 class="comprarNovamente__titulo">Compraria novamente? *</h3>
+                <div class="feedback__comprarNovamente comprar-novamente">
+                    <h3 class="comprar-novamente__titulo">Compraria novamente? *</h3>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="radsimnao" id="radSim" value="opcao1" required>
+                        <input class="form-check-input" type="radio" name="radsimnao" id="radSim" value="opcao1"
+                            required>
                         <label class="form-check-label" for="radSim">Sim</label>
-                      </div>
-                      <div class="form-check form-check-inline">
+                    </div>
+                    <div class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="radsimnao" id="radNao" value="opcao2">
                         <label class="form-check-label" for="radNao">Não</label>
-                      </div>
+                    </div>
                 </div>
                 <div class="feedback__sugestao sugestao">
-                    <h3 class="sugestao__titulo">Deixe-nos uma sugestão de melhoria ou recomendação para novos produtos.</h3>
-                    <textarea class="form-control sugestao__textarea" id="exampleFormControlTextarea1" rows="8" placeholder="Escreva aqui..."></textarea>
-        
+                    <h3 class="sugestao__titulo">Deixe-nos uma sugestão de melhoria ou recomendação para novos produtos.
+                    </h3>
+                    <textarea class="form-control sugestao__textarea" id="exampleFormControlTextarea1" rows="8"
+                        placeholder="Escreva aqui..."></textarea>
                 </div>
             </section>
             <button id="btn" type="submit" class="btn botao">Enviar Formulário</button>
